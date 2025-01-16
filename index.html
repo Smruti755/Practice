@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROJECT 1(Light)</title>
+    <style>
+        body{ background-color:rgb(248, 255, 247); }
+        #a{grid-area: a1; }
+        #b{grid-area: b1; }
+        #c{grid-area: c1; }
+        #d{grid-area: d1; }
+        #e{grid-area: e1; }
+        #f{grid-area: f1; }
+        #g{grid-area: g1; }
+        #h{grid-area: h1; }
+        #maindiv{
+            display: grid;
+            grid-template-areas: 'a1 b1 c1 d1'
+            'e1 f1 g1 h1';
+            color: white;
+            padding: 30px;
+            height: auto;
+            width: auto;
+        }
+        #maindiv > div{
+            border: 1px solid black;
+            color: black;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px;
+            text-align: center;
+            font-size: 30px;
+            justify-content: space-evenly;
+            height: 800px;;
+            width: 600px;
+        }
+        img{
+            border-radius: 15px 15px 0 0;
+            width: 600px;
+            height: 400px;
+        }
+        h1{
+            font-size: 50px;
+            animation-name: anim;
+            animation-iteration-count: 10;
+            animation-duration: 3s;
+        }
+        .head{ 
+            padding: 30px;
+            color: rgb(14, 82, 0);
+            background-color: rgb(222, 255, 193);
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 60px;
+            font-weight: 700;
+        }
+        p{
+            text-align: left;
+            font-size: 30px;
+        }
+        h4{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;
+            color:rgb(0, 154, 250);
+            font-weight: 700;
+        }
+        @keyframes anim{
+            from{transform: translateX(30px);
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;}
+            to{transform: translateX(30px);
+            color: aqua;
+            font-family: Arial, Helvetica, sans-serif;}    
+        }
+        a{
+            text-decoration:none;
+            color: rgb(114, 218, 228);
+        }
+        .footer{
+            text-align: right;
+            background-color: rgb(173, 241, 182);
+            color: rgb(15, 17, 20);
+            font-size: 24px;
+            padding: 30px;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p class="head">Tourist places of India</p>
+    <div id="maindiv">
+        <div id="a">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7QcRAVj3r-Mv-URmxLyQVdzo-SR1bjUPzVg&s" >
+            <h4>Jagannath Temple</h4>
+            <p>Built in the 11th-century, Jagannath Temple is the most sacred pilgrimage <br>
+                site in East India. Given the honour of being of one of the Char Dhams, <br>
+                the shrine is one of the most-visited Hindu temples in India.
+                <a href="#">Read more</a></p>
+        </div>
+        <div id="b">
+            <img src="https://www.tourmyindia.com/states/odisha/images/khanduala-waterfall.jpg">
+            <h4>Khanduala Waterfall</h4>
+            <p>Some 32 km from the enticing setting of Karlapat Wildlife Sanctuary <br>
+                there is located the famous Khanduala Waterfall. This charming waterfall <br> 
+                is one of the sought-after tourist places in the region.
+                <a href="#">Read more</a></p>
+        </div>
+        <div id="c"><img src="https://skysafar.in/wp-content/uploads/2024/05/odisha-1.png" >
+            <h4>Konark Temple</h4>
+            <p>A UNESCO World Heritage Site and a popular temple in Odisha is Konark Sun <br>
+                Temple. This enticing tourist attraction is a monumental representation <br>
+                of Lord Sun's chariot with massive wheels and horses.
+                <a href="#">Read more</a>
+            </p>
+        </div>
+        <div id="d"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/1c/9b/ca/shanti-stupa-dhauli-giri.jpg?w=500&h=-1&s=1" >
+            <h4>Dhauli Giri</h4>
+            <p>Some 8 km south of Bhubaneswar, there is located Dhauli Hills. A must-visit <br>
+                tourist attraction located on the banks of river Daya. Dhauli is known for <br>
+                its famous attraction, Pagoda Peace, also known as Shanti Stupa.
+                <a href="#">Read more</a>
+            </p>
+        </div>
+        <div id="e"><img src="https://www.honeymoonbug.com/blog/wp-content/uploads/2023/06/sambalpur-odisha.jpg" >
+            <h4>Hirakud Dam</h4>
+            <p>Hirakud Dam,the biggest dam in the world, is built across the Mahanadi <br>
+               River in the Sambalpur district of the Indian state of Odisha. It drains <br>
+               an area of 1,33,090 Sq.Kms., more than twice the area of Srilanka .
+               <a href="#">Read more</a>
+            </p>
+        </div>
+        <div id="f">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/35/2f/56/fb-img-1454379432446.jpg?w=500&h=-1&s=1">
+            <h4>Chillika Lake</h4>
+            <p>Island boat tours with potential dolphin and migratory bird sightings amidst 
+               serene lake settings; known for seafood delicacies and peaceful beach
+               experiences.<a href="#">Read more</a>
+            </p>
+        </div>
+        <div id="g">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/34/e6/64/20180804-134018-largejpg.jpg?w=500&h=-1&s=1">
+            <h4>Nandankanan Zoological Park</h4>
+            <p>Expansive zoo featuring a diverse array of animals, including a famed white 
+               tiger. Visitors may enjoy guided tours, lion safaris, and eco-friendly 
+               battery cars for navigation.
+               <a href="#">Read more</a>
+            </p>
+        </div>
+        <div id="h">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/bf/79/2b/img-20180701-165033362.jpg?w=500&h=-1&s=1">
+            <h4>Gopalpur Beach</h4>
+            <p>Gopalpur beach is beautiful, given its pebble-free sand and opportunities 
+                for a peek into the daily lives of fishermen. Waves are quite powerful 
+                and sand very soft.
+                <a href="#">Read more</a>
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        Designed and developed by SMRUTI SARGAM.
+    </footer>
+</body>
+</html>
